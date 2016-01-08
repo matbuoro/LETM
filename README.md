@@ -17,9 +17,10 @@ Overview
 
 This folder contains:
 
-* Simulation script : just to illustrate how the LETM is working (using R);  
+* Simulation script : just to illustrate how the LETM works (using R);  
 	|-  SCRIPT_LETM_SIM.R : R script to simulate data and run the analysis;  
 	|-  LETM.md : code of the model  
+	
 * Examples: codes and data from the *Salmo* study (Buoro et al. 2012) and *Earwigs* study (Buzatto et al. 2015). 
 
 
