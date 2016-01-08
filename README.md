@@ -21,9 +21,9 @@ This folder contains:
 	|-  SCRIPT_LETM_SIM.R : R script to simulate data and run the analysis;  
 	|-  LETM.md : code of the model  
 	
-* Case studies:
-	|- *Salmo* folder :  codes and data from Buoro et al. (2012)
-	|- *Earwigs* folder :  codes and data from Buzatto et al. (2015)
+* Case studies:  
+	|- *Salmo* folder :  codes and data from Buoro et al. (2012);  
+	|- *Earwigs* folder :  codes and data from Buzatto et al. (2015);  
 
 
 
