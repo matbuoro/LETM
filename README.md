@@ -3,7 +3,7 @@ Latent Environmental Threshold Model
 
 Conditional strategies are the most common form of discrete phenotypic plasticity. In a conditional strategy, the phenotype expressed by an organism is determined by the difference between an environmental cue and a threshold, both of which may vary among individuals. The Environmental Threshold (ET) model has been proposed as a mean to understand the evolution of conditional strategies, but has been surprisingly seldom applied to empirical studies. A hindrance for the application of the ET model is that often, the proximate cue triggering the phenotypic expression and the individual threshold are not measurable, and can only be assessed using a related observable cue.   
 
-We describe a new statistical model that can be applied in this common situation. The Latent ET model (LETM) allows for a measurement error in the phenotypic expression of the individual environmental cue and a purely genetically determined threshold. We show that coupling our model with quantitative genetic methods allows an evolutionary approach including an estimation of the heritability of conditional strategies.
+We describe a new statistical model that can be applied in this common situation (see Buoro et al. 2012). The Latent ET model (LETM) allows for a measurement error in the phenotypic expression of the individual environmental cue and a purely genetically determined threshold. We show that coupling our model with quantitative genetic methods allows an evolutionary approach including an estimation of the heritability of conditional strategies.
 
 *Update*
 
@@ -17,9 +17,9 @@ Overview
 
 This folder contains:
 
-* Simulation script : just to illustrate how the LETM is working (using R);
-	|-  SCRIPT_LETM_SIM.R : R script to simulate data and run the analysis;
-	|-  LETM.md : code of the model
+* Simulation script : just to illustrate how the LETM is working (using R);  
+	|-  SCRIPT_LETM_SIM.R : R script to simulate data and run the analysis;  
+	|-  LETM.md : code of the model  
 * Examples: codes and data from the *Salmo* study (Buoro et al. 2012) and *Earwigs* study (Buzatto et al. 2015). 
 
 
