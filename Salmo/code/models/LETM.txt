@@ -1,0 +1,50 @@
+
+      model {
+      #======== LIKELIHOOD ========#
+      
+      for (i in 1:N) {
+      
+      # Phenotypes
+      Y[i]~dbern(p[i])
+      p[i]<-phi(z[i])
+      z[i]<-((X[i] - theta[i]) / sqrt(sigma2_eta))
+      
+      # Threshold
+      theta[i]<-mu_theta + a[i]
+      
+      } # End of loop i
+      
+      # Additive genetic value:
+      a[1:N]~dmnorm(mu_a[], invA[,] * (1/sigma2_theta))
+      
+      
+      # Using Cholesky Decomposition:
+      #       a[1:N]~dmnorm(mu_a[], invA_chol[,] * (1/sigma2_theta))
+      #       for ( i in 1: N){
+      #       for ( j in 1: N){
+      #       A_chol[i,j] <- inprod(L.theta[i,1:N], L.theta[j,1:N])
+      #       }}
+      #       invA_chol[1:N, 1:N] <- inverse(A_chol[,])
+      
+      #======== PRIORS ========#
+      
+      # Mean of the threshold
+      mu_theta~dnorm(0, 0.001)
+      
+      # Mean of the additive genetic value:
+      for (i in 1:N) { mu_a[i]<-0 }
+      
+      # Total variance (sigma2_T= sigma2_theta + sigma2_eta)
+      sigma2_P~dunif(0,1000)
+      
+      # variance of the latent threshold
+      sigma2_theta <- sigma2_P * h2
+      
+      # variance of the proximate cue
+      sigma2_eta <- sigma2_P * (1-h2)
+      
+      # Heritability
+      h2~dbeta(1,1)
+      
+      }        # End model
+      
