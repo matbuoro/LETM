@@ -9,7 +9,7 @@ We describe a new statistical model that can be applied in this common situation
 
 We assumed that the individual thresholds covary according to the individual relatedness. The individual additive genetic effects of the threshold , a_i covary and the structure of the covariance matrix depends on the relatedness between individuals. The vector of the a_i, is multivariate normal with mean 0 and variance–covariance matrix A, where  A  is the additive genetic relationship matrix. The additive genetic relationship matrix A is built up from the pedigree. 
 
-To handle with the complexity of the animal model, we can also use an alternative procedure modeling the variation in additive genetic values (or breeding values), which allow the use of the pedigree (see code of the model and "Earwigs" folder as an example). Then, the analysis is much faster!
+To handle with the complexity of the animal model, we can also use an alternative procedure modeling the variation in additive genetic values (or breeding values), which allow the use of the pedigree (see code of the model and "Earwigs" case study as an example). Then, the analysis is much faster!
 
 
 Overview
@@ -17,11 +17,13 @@ Overview
 
 This folder contains:
 
-* Simulation script : just to illustrate how the LETM works (using R);  
+* Simulation script (just to illustrate how the LETM works);  
 	|-  SCRIPT_LETM_SIM.R : R script to simulate data and run the analysis;  
 	|-  LETM.md : code of the model  
 	
-* Examples: codes and data from the *Salmo* study (Buoro et al. 2012) and *Earwigs* study (Buzatto et al. 2015). 
+* Case studies:
+	|- *Salmo* folder :  codes and data from Buoro et al. (2012)
+	|- *Earwigs* folder :  codes and data from Buzatto et al. (2015)
 
 
 
