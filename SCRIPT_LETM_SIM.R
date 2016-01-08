@@ -162,6 +162,7 @@ model {
   
   # Total variance (sigma2_T= sigma2_theta + sigma2_eta)
   sigma2_T~dunif(0,100)
+  # alternative prior:
   #tau_T~dchisqr(1)
   #sigma2_T <- 1/(tau_T/(sd(X)*sd(X)))
   

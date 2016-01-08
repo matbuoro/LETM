@@ -39,15 +39,16 @@ model {
   mu_theta~dnorm(0, 0.001)
   
   # Total variance (sigma2_T= sigma2_theta + sigma2_eta)
-  sigma2_P~dunif(0,100)
-  #tau_P~dchisqr(1)
-  #sigma2_P <- 1/(tau_P/(sd(X)*sd(X)))
+  sigma2_T~dunif(0,100)
+  # alternative prior:
+  #tau_T~dchisqr(1)
+  #sigma2_T <- 1/(tau_T/(sd(X)*sd(X)))
   
   # variance of the latent threshold
-  sigma2_theta <- sigma2_P * h2
+  sigmaT_theta <- sigma2_T * h2
   
   # variance of the proximate cue
-  sigma2_eta <- sigma2_P * (1-h2)
+  sigma2_eta <- sigma2_T * (1-h2)
   
   # Heritability
   h2~dbeta(1,1)
