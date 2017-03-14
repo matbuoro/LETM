@@ -38,4 +38,9 @@ B. A. Buzatto^§^, **M. Buoro^§^**, W. N. Hazel and J.L. Tomkins, 2015. Investi
 
 
 
+LICENCE
+-------
 
+___
+## LICENSE
+The content of this project itself is licensed under the [GNU GPL v3.0 license](https://www.gnu.org/licenses/gpl-3.0.en.html), except the datasets which are under the [Creative Commons Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0/).
