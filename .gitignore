@@ -6,6 +6,8 @@
 /Steelhead
 /R
 /doc
+/Lepais
+/Test
 
 # Backup files #
 ################
@@ -51,6 +53,7 @@
 .Rproj.user
 .Rhistory
 *.RData
+*.Rdata
 *.Rproj
 
 # Compiled source #
